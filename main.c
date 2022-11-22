@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 typedef struct no{
     struct no *pai;
     struct no *esquerda;
@@ -59,7 +58,6 @@ int Vazia(Arvore *arvore){
 
 void Adicionar(Arvore *arvore, int valor){
     if(Vazia(arvore)){
-        printf("entrou");
         No *no = (No*)malloc(sizeof(no));
         no->pai = NULL;
         no->direita = NULL;
