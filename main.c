@@ -94,7 +94,7 @@ void AdicionarDireita(No* no, int valor){
         if(valor > no->direita->valor)
             AdicionarDireita(no->direita, valor);
         else
-            (AdicionarEsquerda(no->esquerda, valor));
+            (AdicionarEsquerda(no->direita, valor));
     }
 }
 
@@ -109,7 +109,7 @@ void AdicionarEsquerda(No* no, int valor){
     }
     else{
         if(valor > no->esquerda->valor)
-            AdicionarDireita(no->direita, valor);
+            AdicionarDireita(no->esquerda, valor);
         else
             AdicionarEsquerda(no->esquerda, valor);
     }
